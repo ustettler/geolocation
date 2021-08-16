@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo Location</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script src="jquery.min.js"></script>
+    <script src="code.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbdvNVZ3O4MYLzshVOqNdbDZCnm_FtLas&callback=initMap"
+    ></script>
+  </head>
+  <body>
+    <div class="clearfix">
+      <h1>
+        Ge<i class="fas fa-search-location"></i> L<i
+          class="fas fa-search-location"
+        ></i
+        >cation
+      </h1>
+
+      <div class="yourLocation" id="currentloc">
+        <i class="fas fa-location-arrow"></i>
+      </div>
+
+      <br />
+      <div class="form">
+        <label for="breite">N°</label>
+        <input
+          type="text"
+          onKeyUp='if(this.value.length==3) { document.getElementById("n1").focus(); }'
+          id="n0"
+        />°
+        <input
+          type="text"
+          onKeyUp='if(this.value.length==2) { document.getElementById("n2").focus(); }'
+          name="n"
+          id="n1"
+        />.
+        <input type="text" id="n2" />
+        <br />
+        <br />
+        <label for="lange">O°</label>
+        <input
+          type="text"
+          onKeyUp='if(this.value.length==3) { document.getElementById("e0").focus(); }'
+          name="grad"
+          id="e0"
+        />°
+        <input
+          type="text"
+          onKeyUp='if(this.value.length==2) { document.getElementById("e1").focus(); }'
+          name="o"
+          id="e1"
+        />. <input type="text" name="o" id="e2" /><br />
+        <button id="btngoe">Geo Search</button>
+        <input type="reset" id="reset" value="Reset" />
+      </div>
+    </div>
+    <br />
+    <div class="clearfix" style="height: 280px; width: 100%">
+      <div id="mapdr" class="mapdv"></div>
+    </div>
+    <h6>
+      Idea: Simbalili | V.1.0 ©2021 | Made with <i class="fas fa-heart"></i> by
+      Urs Stettler - web-man.ch
+    </h6>
+  </body>
+</html>

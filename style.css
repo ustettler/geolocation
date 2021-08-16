@@ -1,0 +1,202 @@
+/* CSS by Urs Stettler 04.08.2021 */
+
+/* === Small CSS Reset === */
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:10px;
+}
+
+h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align:center;
+}
+
+h6 {
+    margin-top: 5rem;
+    font-size: clamp(.5rem, 1vw, 1rem); 
+}
+
+p {
+    font-size: 1rem;
+}
+
+i {
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input[type="text"] {
+    width: 3.2rem;
+    font-size: 1.5rem;
+    padding: .1rem;
+}
+
+input[type="text2"] {
+    width: 2.5rem;
+    font-size: 1.5rem;
+    padding: .1rem;
+}
+
+input[type="text3"] {
+    width: 3.2rem;
+    font-size: 1.5rem;
+    padding: .1rem;
+}
+
+
+input[type="text"]:focus, input[type="text2"]:focus, input[type="text3"]:focus{
+    background-color: yellowgreen;
+    color: black;
+}
+
+
+/* input[type="submit"] {
+    margin-left: .5rem;
+    padding: .5rem;
+    margin-top: 1rem;
+    width: 60%;
+    color:aliceblue;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+input[type="submit"]:active {
+    background-color: yellowgreen;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+} */
+
+input[type="reset"] {
+    margin-left: .5rem;
+    padding: .5rem;
+    margin-top: 1rem;
+    width: 25%;
+    padding: 0;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 1rem;
+}
+
+input[type="reset"]:active {
+    color: red;
+}
+
+
+/* Button */
+button {
+    background-color: blue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    width: 60%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: .2rem;
+    border: none;
+    padding: .5rem 0 .5rem 0 ;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+button:active {
+    background-color: orange;
+    color: black;
+}
+
+.form {
+    color: black;
+    width: 320px;
+    background: rgba( 184, 233, 134, 0.55 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.0px );
+-webkit-backdrop-filter: blur( 8.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+border-radius: 50px;
+background: #e0d028;
+box-shadow:  20px 20px 60px #beb122,
+             -20px -20px 60px #ffef2e;
+
+    border-radius: 10px;
+    padding: 2rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+form p {
+    font-size: .7rem;
+    font-style: italic;
+    color: darkgray;
+    text-align: center;
+}
+
+
+.yourLocation {
+    height: 10vh;
+    /* display: flex; */
+    /* flex-direction: column; */
+    text-align: center;
+    cursor:pointer;
+}
+
+.yourLocation i {
+    font-size: 1.5rem;
+    color: darkgreen;
+    border: solid 3px green;
+    border-radius: 50%;
+    padding: .7rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mapdv {
+    height: 300px;
+    background-color: white;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+}
